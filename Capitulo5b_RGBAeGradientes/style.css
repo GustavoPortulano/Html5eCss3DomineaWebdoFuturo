@@ -1,0 +1,25 @@
+/*Posicionando a mensagem por cima da foto, alguns
+pixels de distância do final dela.*/
+figure {
+    position: relative;
+}
+
+img {
+    display: block;
+}
+
+figcaption {
+    bottom: 5px;
+    margin: 0 5px;
+    padding: 5px;
+    position: absolute;
+    width: 300px;
+}
+
+/*Página 86: trocando a cor da fonte e deixando o fundo
+um pouco transparente.*/
+figcaption {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+}

@@ -1,0 +1,83 @@
+/*Capítulo 4, página 68: impressão de tabelas.*/
+table {
+    width: 500px;
+}
+
+td {
+    border: 1px dotted #666;
+    padding: 5px;
+}
+
+td a {
+    color: #3B5998;
+}
+
+.expense, .profit, .actions {
+    text-align: right;
+}
+
+.expense, .profit {
+    font-weight: bold;
+}
+
+.expense {color: red;}
+.profit  {color: green;}
+
+.actions a {
+    font-size: 0.9em;
+    color: white;
+    padding: 2px 5px;
+    background-color: #3B5998;
+    text-decoration: none;
+}
+
+/*Página 69: impressão, garantindo que o conteúdo esteja
+na cor preta e que a tabela ocupe o máximo de espaço.*/
+@media print {
+        * {
+            color: #000 !important;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        border-color: #000;
+    }
+}
+
+/*Página 69: trabalhando nos links da página. Os da primeira coluna
+podem ser expandidos utilizando a técnica do peseudoelemento. A 
+coluna com os links de edição é dispensável para a nossa visão de 
+impressão.*/
+
+a::after {
+    content: '('attr(href)')';
+    margin-left: 2px;
+}
+
+.actions {
+    display: none;
+}
+
+/*Página 70. Tratando da coluna de recetias e de débitos. Usando
+pseudoelementos, adiconamos duas características à célula desta
+coluna. Um sinal de - ou +, dependendo do caso, antes do valor,
+e os termos Receita e Despesa. Com as cores removidas, estes sinais
+serão úteis.*/
+.expense::before {
+    content: '- ';
+}
+
+.expense::after {
+    content: ' - Despesa';
+}
+
+.profit::before {
+    content: '+ '
+}
+
+.profit::after {
+    content: ' - Receita'
+}

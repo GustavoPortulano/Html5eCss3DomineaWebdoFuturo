@@ -1,0 +1,109 @@
+body {
+    font-size: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/*Página 13: Div principal*/
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/*Página 16: bordas e margens*/
+.place {
+    border-color: #CCC #999 #999 #ccc;
+    border: 1px solid #CCC;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/*Página 17: Removendo espaço do título e adicionando uma borda verde*/
+.place h2 {
+    border-bottom: 1px dashed #7E9F19;
+    margin: 0;
+}
+
+/*Página 18: troca de cor de fundo da página*/
+body {
+    background: #FFF1D6 url(images/noise.png);
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/*Página 19: fundo branco nos quadros de texto*/
+.place {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-color: #CCC #999 #CCC;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/*Página 19. Mudando a cor dos links para negrito*/
+.place a {
+    color: #2C88A7;
+    font-weight: bold;
+}
+
+/*Página 20. Link que leva para a página principal*/
+h1 a {
+    color: #7E9F19;
+    text-decoration: none;
+}
+
+/*Página 20. Pseudoseletor para mudar a cor do link.*/
+h1 a:hover {
+    background-color: #7E9F19;
+    color: #FFF;
+}
+
+/*Página 24. propriedade float: alinha horizontalmente. */
+.place img {
+    border: 1px solid #7E9F19;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+}
+
+/*Página 25. Acrescentano um div com classe clear
+para ajustar o tamanho das imagens. Isso adiciona
+um elemento vazio.*/
+.clear {
+    clear: both;
+}
+
+/*Página 26: Adicionando e formatando o rodapé.*/
+.footer {
+    font-size: 12px;
+    text-align: center; 
+}
+
+/*Página 27. Barra lateral.*/
+.sinedote {
+    background-color: #FFFBE4;
+    border: 1px solid #C9BC8F;
+    padding: 10px;
+}
+.sinedote h3 {
+    font-size: 14px;
+    margin-top: 0;
+}
+.sinedote ol {
+    font-size: 12px;
+}
+
+/*Página 28: formatando a barra lateral*/
+.places {
+    float: left;
+    width: 660px;
+}
+
+/*Página 29. Colocando a barra à direita da página*/
+.sidenote {
+    background-color: #FFFBE4;
+    border: 1px solid #C9BC8F;
+    float: right;
+    padding: 10px;
+    
+    width: 260px;
+}
